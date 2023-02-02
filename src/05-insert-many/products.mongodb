@@ -1,0 +1,73 @@
+use("vitagest")
+
+db.products.drop()
+
+db.products.insertMany([
+  {
+    "_id": 1,
+  "name": "Incauca",
+  "category": "Dulces",
+  "price": 2344,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674253478566"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1674253478566"
+    }
+  }
+},
+{
+    "_id": 2,
+  "name": "Arroz",
+  "category": "Granos",
+  "price": 2500,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674253548817"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1674253548817"
+    }
+  }
+},
+{
+    "_id": 3,
+  "name": "Granola de chocolate",
+  "category": "Cereales",
+  "price": 5500,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674253632335"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1674253632335"
+    }
+  }
+},
+{
+    "_id": 4,
+  "name": "Granola de chocolate",
+  "category": "Cereales",
+  "price": 5500,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1674253632335"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1674253632335"
+    }
+  }
+}
+
+])
+
+db.products.find()

@@ -1,0 +1,16 @@
+use("vitagest")
+
+db.products.updateOne(
+  // Query
+  {_id: 1},
+  // Change => operators
+  {
+    $set: {
+      name: 'IncaucaChanged'
+    }
+  }
+)
+
+
+
+db.products.find()

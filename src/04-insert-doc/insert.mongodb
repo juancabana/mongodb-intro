@@ -1,0 +1,9 @@
+use("vitagest")
+
+db.products.insertOne({
+  "name": "Incauca1",
+  "category": "Dulces1",
+  "price": 23441,
+
+
+})
